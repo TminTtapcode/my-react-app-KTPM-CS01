@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers{
-        pollSCM('H35 * * * *') // Kiểm tra thay đổi mỗi 5 phút
+        pollSCM('H3 * * * *') // Kiểm tra thay đổi mỗi 5 phút
     }
 
     options {
