@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers{
+        pollSCM('H35 * * * *') // Kiểm tra thay đổi mỗi 5 phút
+    }
+
     options {
         timeout(time: 30, unit: 'MINUTES')
         timestamps()
